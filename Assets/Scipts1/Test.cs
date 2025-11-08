@@ -2,15 +2,15 @@ using UnityEngine;
 
 public class Test : MonoBehaviour
 {
-    // 한글 주석
-    void Start()
-    {
-        
-    }
+    private int speed = 3;
 
-    // Update is called once per frame
     void Update()
     {
-        
+        transform.position += movePosition();
+    }
+
+    private Vector3 movePosition()
+    {
+        return Vector3.up * Time.deltaTime * speed;
     }
 }
