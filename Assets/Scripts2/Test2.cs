@@ -1,16 +1,17 @@
 using UnityEngine;
+using UnityEngine.Rendering;
 
 public class Test2 : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
+    private int speed2 = 3;
 
-    // Update is called once per frame
     void Update()
     {
-        
+        transform.position += movePosition();
+    }
+
+    private Vector3 movePosition()
+    {
+        return Vector3.up * Time.deltaTime * speed2;
     }
 }
