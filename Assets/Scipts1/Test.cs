@@ -7,6 +7,7 @@ public class Test : MonoBehaviour
     void Update()
     {
         transform.position += movePosition();
+        Debug.Log("dfdaf" + speed);
     }
 
     private Vector3 movePosition()

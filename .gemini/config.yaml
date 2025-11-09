@@ -1,0 +1,9 @@
+code_review:
+  # 1. 모든 파일(*/**)과 폴더를 기본적으로 검사 대상에서 제외합니다.
+  files_to_ignore:
+    - '**'
+
+  # 2. 예외 규칙(files_to_include)을 사용하여 검사할 파일을 명시적으로 포함합니다.
+  # 이 예시에서는 'src/Services/Inventory/' 폴더 내부의 모든 .cs 파일만 검사합니다.
+  files_to_include:
+    - 'Assets/Scripts1/**/*.cs'
